@@ -269,16 +269,80 @@ img {
     height: 80px;
 }
 
-.logo-svg {
-    height: 58px;
-    width: auto;
+/* --- Brand Logo Styling --- */
+.logo-container-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    transition: var(--transition-fast);
 }
 
-.logo-img {
-    height: 54px;
+.logo-container-wrapper:hover {
+    opacity: 0.9;
+}
+
+.logo-container-wrapper:hover .logo-image-brand {
+    transform: scale(1.05);
+}
+
+.logo-image-brand {
+    height: 52px;
     width: auto;
     object-fit: contain;
-    display: block;
+    transition: var(--transition-smooth);
+}
+
+.logo-text-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+}
+
+.logo-text-lajes {
+    font-family: var(--font-heading);
+    font-size: 1.95rem;
+    font-weight: 900;
+    color: var(--navy-primary);
+    letter-spacing: -0.5px;
+    line-height: 0.9;
+}
+
+.logo-text-lajes.text-white {
+    color: var(--white);
+}
+
+.logo-text-sub {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.logo-dash {
+    display: inline-block;
+    width: 12px;
+    height: 3px;
+    background-color: var(--navy-primary);
+    border-radius: 1.5px;
+}
+
+.logo-dash.bg-white {
+    background-color: var(--white);
+}
+
+.logo-text-iran {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--orange-primary);
+    letter-spacing: 2px;
+    line-height: 1;
+}
+
+.footer-logo-wrapper {
+    margin-bottom: 24px;
 }
 
 .nav-list {
@@ -1469,7 +1533,8 @@ img {
     width: 100%;
     overflow: hidden;
     position: relative;
-    padding: 15px 0; /* space for hover translations */
+    padding: 15px 0;
+    /* space for hover translations */
 }
 
 .testimonials-grid {
